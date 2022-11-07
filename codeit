@@ -1,2 +1,13 @@
-
-
+def hw2_0(rows=3): 
+     output = '' 
+     for rows in range(5,11): 
+         for i in range(rows): 
+             triangle = '' 
+             triangle += ' '*(rows-i-1) 
+             triangle += '* '*(i+1) 
+             if i !=rows: 
+                 output += triangle +'\n' 
+             else: 
+                 output += triangle 
+      
+     return output
